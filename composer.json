@@ -17,8 +17,6 @@
     "melisplatform/melis-calendar": "~2.2.1",
     "melisplatform/melis-cms": "~2.2.1",
     "melisplatform/melis-cms-page-historic": "~2.2.1",
-    "melisplatform/melis-cms-prospects": "~2.2.1",
-    "melisplatform/melis-cms-news": "~2.2.2",
     "melisplatform/melis-cms-slider": "~2.2.1",
     "melisplatform/melis-engine": "~2.2.1",
     "melisplatform/melis-front": "~2.2.1",
@@ -26,6 +24,23 @@
     "melisplatform/melis-installer": "~2.2.3",
     "melisplatform/melis-messenger": "~2.2.1",
     "melisplatform/melis-marketplace": "~2.2.0",
-    "melisplatform/melis-cms-page-analytics": "~2.2.1"
+    "melisplatform/melis-cms-page-analytics": "~2.2.1",
+
+    "melisplatform/melis-cms-prospects": "dev-master",
+    "melisplatform/melis-cms-news": "dev-master",
+    "melisplatform/melis-dbdeploy": "dev-master"
+  },
+  "repositories": [{
+    "type": "vcs",
+    "url": "https://github.com/Pierozi/melis-dbdeploy.git"
+  }, {
+    "type": "vcs",
+    "url": "https://github.com/Pierozi/melis-cms-prospects.git"
+  }, {
+    "type": "vcs",
+    "url": "https://github.com/Pierozi/melis-cms-news.git"
+  }],
+  "scripts": {
+    "post-update-cmd": "MelisDbDeploy\\Module::run"
   }
 }
